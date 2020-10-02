@@ -34,19 +34,26 @@
                 text-align: center;
                 color: white;
             }
+
+            #container {
+                margin: 15px 0;
+            }
+
+            @media (min-height: 880px) {
+                #container {
+                    margin: 0;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    -ms-transform: translate(-50%, -50%);
+                    transform: translate(-50%, -50%);
+                }
+            }
         </style>
     </head>
 
     <body>
-        <div
-            style="
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                -ms-transform: translate(-50%, -50%);
-                transform: translate(-50%, -50%);
-            "
-        >
+        <div id="container">
             <header>
                 <div>
                     <img src="images/logo.svg" style="width: 300px" />
@@ -117,7 +124,11 @@
                         <img src="images/carneiro.svg" height="100px" />
                     </div>
                     <div style="float: left">
-                        <img src="images/linha.svg" height="130px" />
+                        <img
+                            src="images/linha.svg"
+                            height="125px"
+                            width="20px"
+                        />
                     </div>
                     <div
                         style="
